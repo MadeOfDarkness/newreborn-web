@@ -56,6 +56,7 @@
 	</section>
 	<section class="acerca-de-mi">
 		<div class="info-mia">
+			<!--data-aos="fade-right" data-aos-delay="100" data-aos-duration="700"-->
 			<div class="titulo-info-mia">
 				<h1>¡Hola amigo!</h1>
 				<p>
@@ -77,6 +78,7 @@
 			</div>
 		</div>
 		<div class="foto-mia">
+			<!--data-aos="fade-left" data-aos-delay="100" data-aos-duration="700"-->
 			<img src="https://i.imgur.com/mP0001M.png" alt="Luis F. Montaño | NewReborn - Web" />
 		</div>
 	</section>
@@ -277,5 +279,114 @@
 
 	.frase p {
 		font-size: 18px;
+	}
+
+	@media only screen and (max-width: 1366px) {
+		section.proyectos {
+			.card-proyectos {
+				width: 280px;
+				height: 370px;
+			}
+		}
+
+		section.acerca-de-mi {
+			.info-mia {
+				height: 400px;
+
+				.titulo-info-mia p {
+					font-size: 30px;
+				}
+
+				.cuerpo-info-mia {
+					.tipos-desarrollo {
+						.desarrollo {
+							img {
+								width: 48px;
+							}
+
+							p {
+								font-size: 14px;
+							}
+						}
+					}
+				}
+			}
+
+			.foto-mia {
+				width: 350px;
+				height: 450px;
+			}
+		}
+
+		section.frase {
+			h1 {
+				font-size: 22px;
+			}
+
+			p {
+				font-size: 14px;
+			}
+		}
+	}
+
+	@media only screen and (max-width: 420px) {
+		section.hero {
+			background-attachment: inherit;
+
+			.texto-hero {
+				h1 {
+					font-size: 32px;
+				}
+
+				p {
+					font-size: 16px;
+				}
+			}
+		}
+
+		section.proyectos {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+
+			.card-proyectos {
+				margin-bottom: 1.5rem;
+			}
+		}
+
+		section.acerca-de-mi {
+			flex-direction: column;
+
+			.info-mia {
+				width: 92%;
+				margin-bottom: 1.5rem;
+
+				.titulo-info-mia {
+					margin: 2rem 3px 0;
+					text-align: center;
+
+					h1 {
+						font-size: 26px;
+					}
+
+					p {
+						font-size: 24px;
+					}
+				}
+			}
+
+			.foto-mia {
+				height: 400px;
+			}
+		}
+
+		section.frase {
+			padding: 20px 7px;
+			text-align: center;
+
+			h1 {
+				font-size: 22px;
+			}
+		}
 	}
 </style>

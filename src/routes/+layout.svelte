@@ -1,9 +1,13 @@
+<script>
+	
+</script>
+
 <header>
 	<nav>
+		<li class="logo-btn-inicio">
+			<a href="/">newreborn-web</a>
+		</li>
 		<ul class="izq-nav">
-			<li class="logo-btn-inicio">
-				<a href="/">newreborn-web</a>
-			</li>
 			<li>
 				<a href="/precios">precios</a>
 			</li>
@@ -34,16 +38,17 @@
 				>
 			</li>
 		</ul>
+		<i class="fa-solid fa-bars" id="btn-nav"/>
 	</nav>
 </header>
 <slot />
 
 <footer>
 	<div class="footer-izq">
-		<p>NewReborn - Web &copy; 2022 | todos los derechos <br> reservados</p>
+		<p>NewReborn - Web &copy; 2022 | todos los derechos <br /> reservados</p>
 	</div>
 	<div class="logo-footer">
-		<img src="/favicon.svg" alt=""/>
+		<img src="/favicon.svg" alt="" />
 		NewReborn - Web
 	</div>
 	<div class="footer-der">
@@ -57,12 +62,12 @@
 	</div>
 </footer>
 
-<style>
+<style lang="scss">
 	:global(*) {
 		padding: 0;
 		box-sizing: border-box;
 		margin: 0;
-		/*outline: 1px solid limegreen !important; "console.log para css"*/
+		/*outline: 1px solid limegreen !important;*/
 	}
 	:global(body) {
 		font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell,
@@ -73,6 +78,12 @@
 
 	:global(header, main) {
 		margin: 0 130px;
+	}
+
+	@media only screen and (max-width: 420px) {
+		:global(header, main) {
+			margin: 0;
+		}
 	}
 
 	/*NAVBAR CSS*/
@@ -102,7 +113,7 @@
 	}
 
 	.izq-nav a:hover {
-		border-bottom: 1px solid #FF0000;
+		border-bottom: 1px solid #ff0000;
 	}
 
 	.logo-btn-inicio {
@@ -127,7 +138,7 @@
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
-		padding: 2rem 130px 2.5rem;		
+		padding: 2rem 130px 2.5rem;
 	}
 
 	.logo-footer {
@@ -135,7 +146,7 @@
 		display: flex;
 		flex-direction: column;
 		align-items: center;
-		color: #FF0000;
+		color: #ff0000;
 	}
 
 	.logo-footer img {
@@ -169,10 +180,25 @@
 	.footer-der a {
 		text-align: right;
 		text-decoration: none;
-		transition: all .35s;
+		transition: all 0.35s;
 	}
 
 	.footer-der a:hover {
-		border-bottom: 1px solid #FF0000;
+		border-bottom: 1px solid #ff0000;
+	}
+
+	@media only screen and (max-width: 420px) {
+		footer {
+			padding: 2rem 0 2.5rem;
+			flex-direction: column-reverse;
+
+			.footer-der li {
+				padding: 0 20px;
+			}
+
+			.logo-footer {
+				margin-bottom: 2rem;
+			}
+		}
 	}
 </style>

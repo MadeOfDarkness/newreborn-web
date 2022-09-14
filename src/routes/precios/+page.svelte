@@ -10,7 +10,7 @@
 		</p>
 	</section>
 	<section class="paquetes">
-		<div class="card-paquete">
+		<div data-aos="fade-right" data-aos-delay="100" data-aos-duration="700" class="card-paquete">
 			<div class="card-titulo-paquete">
 				<h1>Básico</h1>
 				&nbsp;
@@ -31,7 +31,7 @@
 				>Cotizar</a
 			>
 		</div>
-		<div class="card-paquete negocios">
+		<div data-aos="fade-up" data-aos-delay="100" data-aos-duration="700" class="card-paquete negocios">
 			<div class="card-titulo-paquete">
 				<h1>Negocios</h1>
 				&nbsp;
@@ -51,7 +51,7 @@
 				>Cotizar</a
 			>
 		</div>
-		<div class="card-paquete">
+		<div data-aos="fade-left" data-aos-delay="100" data-aos-duration="700" class="card-paquete">
 			<div class="card-titulo-paquete">
 				<h1>Intermedio</h1>
 				&nbsp;
@@ -82,8 +82,8 @@
 			<p>Escríbeme por</p>
 		</div>
 		<div class="links">
-			<a href="mailto:newrebornweb@gmail.com"><i class="fa-solid fa-envelope" /></a>
-			<a
+			<a data-aos="fade-up" data-aos-delay="100" data-aos-duration="700" href="http://mailto:newrebornweb@gmail.com"><i class="fa-solid fa-envelope" /></a>
+			<a data-aos="fade-up" data-aos-delay="100" data-aos-duration="700"
 				target="_blank"
 				href="https://api.whatsapp.com/send?phone=523223193798&text=%C2%A1Hola!%20Quiero%20cotizar%20paquete%20personalizado."
 				><i class="fa-brands fa-whatsapp" /></a
@@ -235,6 +235,20 @@
 			a:hover {
 				background: #3b0000;
 				text-decoration: underline;
+			}
+		}
+	}
+
+	@media (max-width: 1360px) {
+		section.paquetes {
+
+			.card-paquete {
+				width: 265px;
+				height: 350px;
+			}
+
+			.negocios {
+				height: 400px;
 			}
 		}
 	}
